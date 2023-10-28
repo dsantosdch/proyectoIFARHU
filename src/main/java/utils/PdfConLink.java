@@ -8,7 +8,6 @@ public class PdfConLink {
 
     private Actor actor;
     public PdfConLink(Actor actor) {
-
         this.actor = actor;
     }
 
@@ -17,6 +16,4 @@ public class PdfConLink {
         String currenttabURL = BrowseTheWeb.as(actor).getDriver().getCurrentUrl();
         return currenttabURL;
     }
-
-
 }

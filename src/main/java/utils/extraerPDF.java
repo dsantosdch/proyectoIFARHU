@@ -29,9 +29,7 @@ public class extraerPDF {
             CloseableHttpClient httpClient = HttpClients.createDefault();
             HttpGet httpGet = new HttpGet(currenttabURL);
             CloseableHttpResponse response = httpClient.execute(httpGet);
-
             InputStream pdfInputStream = response.getEntity().getContent();
-
             PDDocument pdfDocument = PDDocument.load(pdfInputStream);
             PDFTextStripper pdfTextStripper = new PDFTextStripper();
             String pdfContent = pdfTextStripper.getText(pdfDocument);

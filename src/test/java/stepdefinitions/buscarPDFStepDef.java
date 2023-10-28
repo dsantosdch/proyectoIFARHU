@@ -18,7 +18,7 @@ public class buscarPDFStepDef {
     @Given("el link a la pagina del IFARHU")
     public void elLinkALaPaginaDelIFARHU() {
         OnStage.setTheStage(new OnlineCast());
-        OnStage.theActorCalled("Dionisio").wasAbleTo(abrirPaginaPrincipal.UrlApp());
+        OnStage.theActorCalled("Actor").wasAbleTo(abrirPaginaPrincipal.UrlApp());
     }
 
     @When("accedo al menu transparencia")

@@ -14,6 +14,5 @@ public class verificarPDF implements Question {
     public Object answeredBy(Actor actor) {
         extraerPDF extraerPDF = new extraerPDF(actor);
         return extraerPDF.contenidoPDF();
-
     }
 }
