@@ -2,8 +2,6 @@ package questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.questions.Text;
-import userinterface.paginaTransparencia;
 import utils.extraerPDF;
 
 public class verificarPDF implements Question {
